@@ -1,94 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfólio pessoal</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-
+    <!-- Define o tipo de documento como HTML5 -->
+    <title>Portfólio pessoal</title> <!-- Título da página, aparece na aba do navegador -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Faz a página se ajustar a diferentes tamanhos de tela (responsivo) -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo que contém os estilos da página -->
 </head>
 
 <body>
 
-    <div class="animated-background">
-        <div class="container">
+    <div class="animated-background"> <!-- Div com animação de fundo -->
+        <div class="container"> <!-- Contêiner para organizar o conteúdo -->
+
+            <!-- Links de navegação para diferentes seções da página -->
             <a href="#sobremim" class="no-underline-link">
                 <div class="sobre">
                     SOBRE MIM
                 </div>
             </a>
+
             <a href="#formacao" class="no-underline-link">
                 <div class="formacao">
                     FORMAÇÃO
                 </div>
             </a>
+
             <a href="#portfolio" class="no-underline-link">
                 <div class="portfolio">
                     PORTFOLIO
                 </div>
             </a>
+
             <a href="#contato" class="no-underline-link">
                 <div class="contato">
                     CONTATO
                 </div>
             </a>
+
         </div>
 
+        <!-- Seção "Sobre Mim" com informações pessoais -->
         <div id="sobre" class="section">
             <div class="sobre-content">
-                <img src="images/natan.jpg" alt="Minha Foto" class="profile-image">
-                <h2>SOBRE MIM</h2>
+                <img src="images/natan.jpg" alt="Minha Foto" class="profile-image"> <!-- Imagem de perfil -->
+                <h2>SOBRE MIM</h2> <!-- Título da seção -->
                 <p>Me chamo Natan Silva, sempre fui apaixonado pela tecnologia, faço mods de jogos desde pequeno, porém só levei
                     a sério a programação depois que passei em uma seletiva para cursar Administração. No final do curso eu tive a ideia
                     de criar um app para gerenciar uma empresa. Depois dessa ideia eu nunca mais parei
                     de estudar. <br> Hoje sou desenvolvedor back-end Java com conhecimentos sólidos em HTML, CSS, JavaScript, Python,
                     MySQL, Java, Dart e outras técnologias. <br>
                     Meu hobby é puzzle Rubik, gosto de escrever poemas e músicas, amo ler e gosto da natureza.
-                </p>
+                </p> <!-- Texto sobre mim -->
             </div>
         </div>
 
+        <!-- Seção "Formação" com minha trajetória acadêmica -->
         <div id="formacao" class="section">
-            <h2>FORMAÇÃO</h2>
+            <h2>FORMAÇÃO</h2> <!-- Título da seção -->
             <p>Tenho formação técnica de Auxiliar Administrativo pelo instituto SENAI <br>
                 Formação de Java e Spring Boot pela Udemy <br>
                 Cursando Análise e Desenvolvimento de Sistemas pela Uninter Internacional no polo de Lisboa <br>
-                Estudo inglês pela plataforma da faculdade
+                Estudo inglês pela plataforma da faculdade<br>
+                Atualmente estou fazendo projetos partilhados em amigos, pessoais e fazendo free-lancers.
+            </p> <!-- Texto sobre minha formação -->
         </div>
 
+        <!-- Seção "Portfolio" para mostrar meus projetos -->
         <div id="portfolio" class="section">
-            <h2>PORTFOLIO</h2>
-            <p>Logo abaixo o meu repositorio para ver os meus projetos.<br>
-                Atualmente estou trabalhando em um sistema de Travel (Estilo Uber, porem de Motorista x Mercadorias) com linguagem Dart e framework Flutter, não estou sozinho, tenho uma equipa de 2 programadores nessa aventura!<br>
-                E você encontra outros varios projetos pessoais nesse repositorio.
-            </p>
-
+            <h2>PORTFOLIO</h2> <!-- Título da seção -->
+            <p>Logo abaixo o meu repositório para ver os meus projetos.<br>
+                Atualmente estou trabalhando em um sistema de Travel (Estilo Uber, porém de Motorista x Mercadorias) com linguagem Dart e framework Flutter, não estou sozinho, tenho uma equipa de 2 programadores nessa aventura!<br>
+                E você encontra outros vários projetos pessoais nesse repositório.
+            </p> <!-- Texto sobre meus projetos atuais -->
+            
             <a href="https://github.com/INatanSilva?tab=repositories" target="_blank" class="github-button">
-                <button class="button-style">Visitar GitHub</button>
+                <button class="button-style">Visitar GitHub</button> <!-- Botão que leva ao meu GitHub -->
             </a>
-
         </div>
 
+        <!-- Seção "Contato" para as pessoas entrarem em contato comigo -->
         <div id="contato" class="section">
-            <h2>CONTATO</h2>
-            <p> Quer falar comigo? Espero o seu contato.</p>
-            <form action="http://localhost:8080/processForm" method="post">
+            <h2>CONTATO</h2> <!-- Título da seção -->
+            <p> Quer falar comigo? Espero o seu contato.</p> <!-- Mensagem incentivando o contato -->
+            <form> <!-- Início do formulário de contato -->
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" required> <!-- Campo para inserir o nome -->
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required> <!-- Campo para inserir o e-mail -->
 
                 <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto">
+                <input type="text" id="assunto" name="assunto"> <!-- Campo para inserir o assunto -->
 
                 <label for="messagem">Mensagem:</label>
-                <textarea id="messagem" name="messagem" rows="4" required></textarea>
+                <textarea id="messagem" name="messagem" rows="4" required></textarea> <!-- Campo para inserir a mensagem -->
 
-                <button type="submit">Enviar</button>
-
+                <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
             </form>
         </div>
+
+    </div> <!-- Fim da animação de fundo -->
 
 </body>
 </html>
