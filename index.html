@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfólio pessoal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="animated-background">
+        <div class="container">
+            <a href="#sobremim" class="no-underline-link">
+                <div class="sobre">
+                    SOBRE MIM
+                </div>
+            </a>
+            <a href="#formacao" class="no-underline-link">
+                <div class="formacao">
+                    FORMAÇÃO
+                </div>
+            </a>
+            <a href="#portfolio" class="no-underline-link">
+                <div class="portfolio">
+                    PORTFOLIO
+                </div>
+            </a>
+            <a href="#contato" class="no-underline-link">
+                <div class="contato">
+                    CONTATO
+                </div>
+            </a>
+        </div>
+
+        <div id="sobre" class="section">
+            <div class="sobre-content">
+                <img src="images/natan.jpg" alt="Minha Foto" class="profile-image">
+                <h2>SOBRE MIM</h2>
+                <p>Me chamo Natan Silva, sempre fui apaixonado pela tecnologia, faço mods de jogos desde pequeno, porém só levei
+                    a sério a programação depois que passei em uma seletiva para cursar Administração. No final do curso eu tive a ideia
+                    de criar um app para gerenciar uma empresa. Depois dessa ideia eu nunca mais parei
+                    de estudar. <br> Hoje sou desenvolvedor back-end Java com conhecimentos sólidos em HTML, CSS, JavaScript, Python,
+                    MySQL, Java, Dart e outras técnologias. <br>
+                    Meu hobby é puzzle Rubik, gosto de escrever poemas e músicas, amo ler e gosto da natureza.
+                </p>
+            </div>
+        </div>
+
+        <div id="formacao" class="section">
+            <h2>FORMAÇÃO</h2>
+            <p>Tenho formação técnica de Auxiliar Administrativo pelo instituto SENAI <br>
+                Formação de Java e Spring Boot pela Udemy <br>
+                Cursando Análise e Desenvolvimento de Sistemas pela Uninter Internacional no polo de Lisboa <br>
+                Estudo inglês pela plataforma da faculdade
+        </div>
+
+        <div id="portfolio" class="section">
+            <h2>PORTFOLIO</h2>
+            <p>Logo abaixo o meu repositorio para ver os meus projetos.<br>
+                Atualmente estou trabalhando em um sistema de Travel (Estilo Uber, porem de Motorista x Mercadorias) com linguagem Dart e framework Flutter, não estou sozinho, tenho uma equipa de 2 programadores nessa aventura!<br>
+                E você encontra outros varios projetos pessoais nesse repositorio.
+            </p>
+
+            <a href="https://github.com/INatanSilva?tab=repositories" target="_blank" class="github-button">
+                <button class="button-style">Visitar GitHub</button>
+            </a>
+
+        </div>
+
+        <div id="contato" class="section">
+            <h2>CONTATO</h2>
+            <p> Quer falar comigo? Espero o seu contato.</p>
+            <form action="http://localhost:8080/processForm" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto">
+
+                <label for="messagem">Mensagem:</label>
+                <textarea id="messagem" name="messagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+
+</body>
+</html>
